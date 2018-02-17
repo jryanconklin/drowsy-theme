@@ -1,0 +1,74 @@
+/**
+ * Custom Colors for Drowsy Dragon
+ *
+ * Contains all colors and Bootstrap overrides for the Drowsy theme.
+ * This includes all Core design colors, as well as shades and social media colors.
+ *
+ * Based on Coolors Exported Palette - coolors.co/8c271e-aba194-cfcbca-d8ddde-d9f7fa
+ *
+ */
+
+/* Core Colors - RGB */
+$c-auburn: rgba(140, 39, 30, 1); // Vivid Auburn #8c271e
+$c-auburn--light: lighten($c-auburn, 10%);
+$c-auburn--lighter: lighten($c-auburn, 30%);
+$c-auburn--dark: darken($c-auburn, 10%);
+
+$c-grullo: rgba(171, 161, 148, 1); // Grullo #aba194
+$c-grullo--light: lighten($c-grullo, 10%);
+$c-grullo--dark: darken($c-grullo, 10%);
+
+$c-pastel-gray: rgba(207, 203, 202, 1); // Pastel Gray #cfcbca
+$c-pastel-gray--light: lighten($c-pastel-gray, 10%);
+$c-pastel-gray--dark: darken($c-pastel-gray, 10%);
+
+$c-gainsboro: rgba(216, 221, 222, 1); // Gainsboro #d8ddde
+$c-gainsboro--light: lighten($c-gainsboro, 10%);
+$c-gainsboro--dark: darken($c-gainsboro, 10%);
+
+$c-light-cyan: rgba(217, 247, 250, 1); // Light Cyan #d9f7fa
+$c-light-cyan--dark: darken($c-light-cyan, 10%);
+$c-light-cyan--darker: darken($c-light-cyan, 30%);
+
+/* Shades */
+$c-white: white; // #ffffff
+$c-gray--lightest: rgb(227, 227, 227); // #e3e3e3
+$c-gray--lighter: rgb(204, 204, 204); // #cccccc
+$c-gray--light: rgb(153, 153, 153); // #999999
+$c-gray: rgb(122, 122, 122); // #7a7a7a
+$c-gray--dark: rgb(102, 102, 102); // #666666
+$c-gray--darker: rgb(51, 51, 51); // #333333
+$c-gray--darkest: rgb(41, 41, 41); // #292929
+$c-black: black; // #000000
+
+/* Social Colors */
+$c-social--facebook: rgb(59, 89, 152); // #3b5998
+$c-social--instagram: rgb(138, 58, 185); // #8a3ab9
+$c-social--linkedin: rgb(0, 122, 185); // #007ab9
+$c-social--pinterest: rgb(201, 34, 40); // #c92228
+$c-social--twitter: rgb(64, 153, 255); // #4099ff
+$c-social--youtube: rgb(196, 48, 43); // #c4302b
+
+/**
+ * Bootstrap Overrides
+ *
+ * Add colors to $theme-colors var here, be sure to add new colors in single quotes.
+ * $theme-colors is demonstrated by default in Pattern Lab.
+ *
+ * Find other vars to override at ~bootstrap/scss/_variables.scss
+ *
+ */
+
+/* Default Bootstrap */
+$primary: $c-auburn;
+$secondary: $c-grullo;
+$success: green;
+$info: $c-light-cyan;
+$warning: orange;
+$danger: red;
+
+/* Theme Colors */
+$theme-colors: (
+  'pastel-gray': $c-pastel-gray,
+  'gainsboro': $c-gainsboro,
+);
